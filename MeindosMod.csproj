@@ -4,7 +4,7 @@
         <LangVersion>latest</LangVersion>
         <DebugType>embedded</DebugType>
 
-        <VersionPrefix>1.0.7</VersionPrefix>
+        <VersionPrefix>1.0.0</VersionPrefix>
         <VersionSuffix>dev</VersionSuffix> 
         <Description>MeindosMod</Description>
         <Authors>MeindoMC</Authors>
