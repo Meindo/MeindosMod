@@ -1,0 +1,8 @@
+C:\Users\meind\OneDrive\Desktop\Projects\MeindosMod\MeindosMod\bin\Debug\netstandard2.1\MeindosMod.deps.json
+C:\Users\meind\OneDrive\Desktop\Projects\MeindosMod\MeindosMod\bin\Debug\netstandard2.1\MeindosMod.dll
+C:\Users\meind\OneDrive\Desktop\Projects\MeindosMod\MeindosMod\obj\Debug\netstandard2.1\MeindosMod.csproj.AssemblyReference.cache
+C:\Users\meind\OneDrive\Desktop\Projects\MeindosMod\MeindosMod\obj\Debug\netstandard2.1\MeindosMod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\meind\OneDrive\Desktop\Projects\MeindosMod\MeindosMod\obj\Debug\netstandard2.1\MeindosMod.AssemblyInfoInputs.cache
+C:\Users\meind\OneDrive\Desktop\Projects\MeindosMod\MeindosMod\obj\Debug\netstandard2.1\MeindosMod.AssemblyInfo.cs
+C:\Users\meind\OneDrive\Desktop\Projects\MeindosMod\MeindosMod\obj\Debug\netstandard2.1\MeindosMod.csproj.CoreCompileInputs.cache
+C:\Users\meind\OneDrive\Desktop\Projects\MeindosMod\MeindosMod\obj\Debug\netstandard2.1\MeindosMod.dll
