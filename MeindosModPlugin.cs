@@ -12,7 +12,7 @@ namespace MeindosMod;
 [BepInDependency(ReactorPlugin.Id)]
 public partial class MeindosModPlugin : BasePlugin
 {
-    public static string ModVersion = "1.1.0";
+    public static string ModVersion = "1.2.0";
     public Harmony Harmony { get; } = new(Id);
 
     public ConfigEntry<bool> Lights { get; private set; }
