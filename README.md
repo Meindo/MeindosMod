@@ -13,6 +13,8 @@ Should be compatible with the Submerged mod*<br>
 You can change the settings in the BepInEx/config/MeindosMod.cfg file
 
 ## Useful Notes
+- Requires [Reactor](https://github.com/NuclearPowered/Reactor) installed
+- Runs on [BepInEx](https://github.com/BepInEx/BepInEx)
 - When you are actual engineer in game AND the engineer mode is enabled, you can only vent using the impostor vent button. Look at screenshot below to see how that works.
 
 ## Screen Shot:

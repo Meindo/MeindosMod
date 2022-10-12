@@ -26,7 +26,7 @@ class HudManagerUpdatePatch
     class KillButtonDoClickPatch {
         public static bool Prefix(KillButton __instance) {
             __instance.SetEnabled();
-            __instance.SetCoolDown(0, 1);
+            __instance.SetCoolDown(0, 0);
             __instance.ToggleVisible(true);
             return true;
         }
