@@ -10,7 +10,7 @@ namespace MeindosMod.patches
         public static bool Prefix(ShipStatus __instance, [HarmonyArgument(0)] GameData.PlayerInfo player,
             ref float __result)
         {
-            if (PluginSingleton<MeindosModPlugin>.Instance.Config0.Value)
+            if (PluginSingleton<MeindosModPlugin>.Instance.Lights.Value)
             {
                 __result = 255f;
                 return false;
@@ -33,16 +33,3 @@ namespace MeindosMod.patches
         }
     }
 }
-
-/*var t = 1f;
-switch(PluginSingleton<MeindosModPlugin>.Instance.Config0.Value)
-{
-    case true:
-        t = 255f;
-        break;
-    case false:
-        t = Mathf.Lerp(__instance.MinLightRadius, __instance.MaxLightRadius, 1);
-        break;
-}
-__result = t;
-return false;*/
