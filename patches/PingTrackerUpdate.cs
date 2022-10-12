@@ -16,7 +16,6 @@ namespace MeindosMod.patches
             __instance.text.text =
                 $"<color=#00FF00FF>MeindosMod {MeindosModPlugin.ModVersion}</color>\n" +
                 "Made by <color=#BEA4FFFF>Meindo</color>\n"+
-                $"GPU: {SystemInfo.GetGraphicsDeviceName()}\n"+
                 $"Ping: {AmongUsClient.Instance.Ping}ms";
         }
     }
