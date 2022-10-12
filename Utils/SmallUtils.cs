@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-namespace MeindosMod
-{
-    public static class Utils
+namespace MeindosMod.Utils;
+public static class SmallUtils
     {
         public static IList createList(Type myType)
         {
@@ -12,4 +11,3 @@ namespace MeindosMod
         }
 
     }
-}

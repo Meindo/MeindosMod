@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using UnhollowerBaseLib;
 using UnityEngine;
 
-namespace MeindosMod;
+namespace MeindosMod.Utils;
 
 public static unsafe class FastDestroyableSingleton<T> where T : MonoBehaviour
 {
