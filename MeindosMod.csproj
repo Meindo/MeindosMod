@@ -16,11 +16,12 @@
 		<GameVersion Condition="'$(GamePlatform)' == 'Itch'">2022.8.23</GameVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-	  <Optimize>true</Optimize>
+	  <Optimize>false</Optimize>
 	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
 	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	  <Optimize>false</Optimize>
 	</PropertyGroup>
 
 	<ItemGroup>
