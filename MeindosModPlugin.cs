@@ -1,4 +1,7 @@
-﻿using BepInEx;
+﻿using System;
+using System.Linq;
+using System.Text.RegularExpressions;
+using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.IL2CPP;
 using HarmonyLib;
@@ -33,5 +36,38 @@ public partial class MeindosModPlugin : BasePlugin
         }
         FileWriter.CreateTFile();
         logger.LogMessage("Finished loading MeindosMod");
+    }
+    public static IRegionInfo[] MergeRegions(
+        IRegionInfo[] oldRegions,
+        IRegionInfo[] newRegions)
+    {
+        IRegionInfo[] destinationArray = new IRegionInfo[oldRegions.Length + newRegions.Length];
+        Array.Copy(oldRegions, destinationArray, oldRegions.Length);
+        Array.Copy(newRegions, 0, destinationArray, oldRegions.Length, newRegions.Length);
+        return destinationArray;
+    }
+
+    public static IRegionInfo AddRegion(string name, string ip, bool useDtls)
+    {
+        if (Uri.CheckHostName(ip) != UriHostNameType.IPv4)
+            return DestroyableSingleton<ServerManager>.Instance.CurrentRegion;
+        IRegionInfo iregionInfo1 = ServerManager.DefaultRegions.ToArray().FirstOrDefault((Func<IRegionInfo, bool>) (region => region.PingServer == ip));
+        if (iregionInfo1 != null)
+            return iregionInfo1;
+        IRegionInfo iregionInfo2 = new DnsRegionInfo(ip, name, (StringNames) 1003, ip, 22023, useDtls).Cast<IRegionInfo>();
+        RegionPatch.ModRegions.Add(iregionInfo2);
+        RegionPatch.Patch();
+        return iregionInfo2;
+    }
+
+    public static bool SetDirectRegion(string ip, out IRegionInfo newRegion)
+    {
+        newRegion = null;
+        if (!Regex.IsMatch(ip, "^(\\d{1,3}\\.){3}\\d{1,3}$"))
+            return false;
+        newRegion = new DnsRegionInfo(ip, ip, (StringNames) 1003, ip, 22023).Cast<IRegionInfo>();
+        RegionPatch.DirectRegion = newRegion;
+        RegionPatch.Patch();
+        return true;
     }
 }

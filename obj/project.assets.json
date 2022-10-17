@@ -2949,7 +2949,7 @@
     "/home/meindert/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.1.0-dev",
+    "version": "1.2.0-dev",
     "restore": {
       "projectUniqueName": "/home/meindert/MeindosMod/MeindosMod.csproj",
       "projectName": "MeindosMod",
