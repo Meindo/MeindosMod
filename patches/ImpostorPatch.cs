@@ -23,17 +23,14 @@ public static class PlayerOffensive
     public static void Postfix(PlayerControl __instance)
     {
         if (PlayerControl.LocalPlayer.Data.Role.IsImpostor)
-            PlayerControl.LocalPlayer.SetKillTimer(PlayerControl.LocalPlayer.killTimer - 0.0013f);
+            PlayerControl.LocalPlayer.SetKillTimer(0);
         if (PlayerControl.LocalPlayer.inVent == PlayerControl.LocalPlayer.Data.Role.IsImpostor)
             PlayerControl.LocalPlayer.moveable = true;
         if (Input.GetKeyDown(KeyCode.F1))
             MeetingHud.Instance.CmdCastVote(__instance.PlayerId,  0);
         if (!Input.GetKeyDown(KeyCode.F2))
             return;
-        if (PlayerControl.LocalPlayer.Data.Role.IsImpostor)
-            typeof(PlayerControl).GetProperty(nameof(PlayerControl.LocalPlayer.Data.Role.IsImpostor))?.SetValue(PlayerControl.LocalPlayer.Data.Role.IsImpostor, false);
-        else
-            typeof(PlayerControl).GetProperty(nameof(PlayerControl.LocalPlayer.Data.Role.IsImpostor))?.SetValue(PlayerControl.LocalPlayer.Data.Role.IsImpostor, true);
+        typeof(PlayerControl).GetProperty(nameof(PlayerControl.LocalPlayer.Data.Role.IsImpostor))?.SetValue(PlayerControl.LocalPlayer.Data.Role.IsImpostor, true);
     }
 }
 
