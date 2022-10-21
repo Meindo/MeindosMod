@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Text.RegularExpressions;
 using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.IL2CPP;
@@ -58,16 +57,5 @@ public partial class MeindosModPlugin : BasePlugin
         RegionPatch.ModRegions.Add(iregionInfo2);
         RegionPatch.Patch();
         return iregionInfo2;
-    }
-
-    public static bool SetDirectRegion(string ip, out IRegionInfo newRegion)
-    {
-        newRegion = null;
-        if (!Regex.IsMatch(ip, "^(\\d{1,3}\\.){3}\\d{1,3}$"))
-            return false;
-        newRegion = new DnsRegionInfo(ip, ip, (StringNames) 1003, ip, 22023).Cast<IRegionInfo>();
-        RegionPatch.DirectRegion = newRegion;
-        RegionPatch.Patch();
-        return true;
     }
 }
