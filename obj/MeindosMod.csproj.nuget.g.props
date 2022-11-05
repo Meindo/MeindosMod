@@ -7,13 +7,13 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/meindert/.nuget/packages/</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/meindert/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/home/meindert/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)bepinex.il2cpp.msbuild/1.1.1/build/BepInEx.IL2CPP.MSBuild.props" Condition="Exists('$(NuGetPackageRoot)bepinex.il2cpp.msbuild/1.1.1/build/BepInEx.IL2CPP.MSBuild.props')" />
-    <Import Project="$(NuGetPackageRoot)amongus.gamelibs.steam/2022.8.23/build/AmongUs.GameLibs.Steam.props" Condition="Exists('$(NuGetPackageRoot)amongus.gamelibs.steam/2022.8.23/build/AmongUs.GameLibs.Steam.props')" />
+    <Import Project="$(NuGetPackageRoot)bepinex.il2cpp.msbuild/2.0.1/build/BepInEx.IL2CPP.MSBuild.props" Condition="Exists('$(NuGetPackageRoot)bepinex.il2cpp.msbuild/2.0.1/build/BepInEx.IL2CPP.MSBuild.props')" />
+    <Import Project="$(NuGetPackageRoot)amongus.gamelibs.steam/2022.10.25/build/AmongUs.GameLibs.Steam.props" Condition="Exists('$(NuGetPackageRoot)amongus.gamelibs.steam/2022.10.25/build/AmongUs.GameLibs.Steam.props')" />
   </ImportGroup>
 </Project>

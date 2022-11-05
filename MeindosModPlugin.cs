@@ -2,10 +2,12 @@
 using System.Linq;
 using BepInEx;
 using BepInEx.Configuration;
-using BepInEx.IL2CPP;
+using BepInEx.Logging;
+using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
 using MeindosMod.patches;
 using Reactor;
+using Reactor.Utilities;
 
 namespace MeindosMod;
 
@@ -17,10 +19,10 @@ public partial class MeindosModPlugin : BasePlugin
     public static string ModVersion = "1.2.0";
     public Harmony Harmony { get; } = new(Id);
     public ConfigEntry<bool> Lights { get; private set; }
+    public static ManualLogSource logger = BepInEx.Logging.Logger.CreateLogSource("MeindosMod");
     public ConfigEntry<bool> Vents { get; private set; }
     public override void Load()
     {
-        var logger = BepInEx.Logging.Logger.CreateLogSource("MeindosMod");
         logger.LogInfo("Loading MeindosMod...");
         Lights = Config.Bind("MeindosMod","Light Cheat", false, "Always have impostor vision");
         Vents = Config.Bind("MeindosMod","Engineer", false, "Allows you to always vent, no matter the role");

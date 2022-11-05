@@ -1,5 +1,5 @@
 ﻿using HarmonyLib;
-using Reactor;
+using Reactor.Utilities;
 using UnityEngine;
 
 namespace MeindosMod.patches
