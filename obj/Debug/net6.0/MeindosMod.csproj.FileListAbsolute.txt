@@ -1,0 +1,10 @@
+C:\Users\Meindert\source\repos\MeindosMod\obj\Debug\net6.0\MeindosMod.csproj.AssemblyReference.cache
+C:\Users\Meindert\source\repos\MeindosMod\obj\Debug\net6.0\MeindosMod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Meindert\source\repos\MeindosMod\obj\Debug\net6.0\MeindosMod.AssemblyInfoInputs.cache
+C:\Users\Meindert\source\repos\MeindosMod\obj\Debug\net6.0\MeindosMod.AssemblyInfo.cs
+C:\Users\Meindert\source\repos\MeindosMod\obj\Debug\net6.0\MeindosMod.csproj.CoreCompileInputs.cache
+C:\Users\Meindert\source\repos\MeindosMod\bin\Debug\net6.0\MeindosMod.deps.json
+C:\Users\Meindert\source\repos\MeindosMod\bin\Debug\net6.0\MeindosMod.dll
+C:\Users\Meindert\source\repos\MeindosMod\obj\Debug\net6.0\MeindosMod.dll
+C:\Users\Meindert\source\repos\MeindosMod\obj\Debug\net6.0\refint\MeindosMod.dll
+C:\Users\Meindert\source\repos\MeindosMod\obj\Debug\net6.0\ref\MeindosMod.dll

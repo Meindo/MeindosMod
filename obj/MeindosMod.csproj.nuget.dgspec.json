@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/meindert/MeindosMod/MeindosMod.csproj": {}
+    "C:\\Users\\Meindert\\source\\repos\\MeindosMod\\MeindosMod.csproj": {}
   },
   "projects": {
-    "/home/meindert/MeindosMod/MeindosMod.csproj": {
+    "C:\\Users\\Meindert\\source\\repos\\MeindosMod\\MeindosMod.csproj": {
       "version": "1.2.0-dev",
       "restore": {
-        "projectUniqueName": "/home/meindert/MeindosMod/MeindosMod.csproj",
+        "projectUniqueName": "C:\\Users\\Meindert\\source\\repos\\MeindosMod\\MeindosMod.csproj",
         "projectName": "MeindosMod",
-        "projectPath": "/home/meindert/MeindosMod/MeindosMod.csproj",
-        "packagesPath": "/home/meindert/.nuget/packages/",
-        "outputPath": "/home/meindert/MeindosMod/obj/",
+        "projectPath": "C:\\Users\\Meindert\\source\\repos\\MeindosMod\\MeindosMod.csproj",
+        "packagesPath": "C:\\Users\\Meindert\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Meindert\\source\\repos\\MeindosMod\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/meindert/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Meindert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.bepinex.dev/v3/index.json": {}
         },
@@ -42,7 +44,7 @@
             "AmongUs.GameLibs.Steam": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2022.10.25, )"
+              "version": "[2023.3.28, )"
             },
             "BepInEx.AutoPlugin": {
               "suppressParent": "All",
@@ -58,11 +60,11 @@
             "BepInEx.Unity.IL2CPP": {
               "include": "Compile, Build, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[6.0.0-be.662, )"
+              "version": "[6.0.0-be.663, )"
             },
             "Reactor": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.1.0, )"
             }
           },
           "imports": [
@@ -71,22 +73,17 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.10, 6.0.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.110/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

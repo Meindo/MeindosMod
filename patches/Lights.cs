@@ -22,13 +22,14 @@ namespace MeindosMod.patches
             }
             if (player.Role.IsImpostor)
             {
-                __result = __instance.MaxLightRadius * PlayerControl.GameOptions.ImpostorLightMod;
+                __result =
+                    __instance.MaxLightRadius * GameOptionsManager.Instance.currentNormalGameOptions.ImpostorLightMod;
                 return false;
             }
             var switchSystem = __instance.Systems[SystemTypes.Electrical].Cast<SwitchSystem>();
             var t = switchSystem.Value / 255f;
             __result = Mathf.Lerp(__instance.MinLightRadius, __instance.MaxLightRadius, t) *
-                       PlayerControl.GameOptions.CrewLightMod;
+                       GameOptionsManager.Instance.currentNormalGameOptions.CrewLightMod;
             return false;
         }
     }
